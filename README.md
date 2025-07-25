@@ -21,9 +21,7 @@ This project focuses on detecting anomalies in high-frequency limit order book (
   - Encoder: 2 stacked LSTM layers (128 and 64 units)
   - Decoder: Fully connected dense layer + reshape
 - **Loss Function**: Mean Squared Error (MSE) between original and reconstructed sequences
-- **Anomaly Score**:  
-  $$\text{anomaly score} = \frac{\text{reconstruction error}}{\sum \text{reconstruction error}}$$
-- **Thresholding**: Anomalies are defined as samples with reconstruction error in the **99th percentile**.
+- **Thresholding**: Anomalies are defined as samples with reconstruction error in the 99th percentile.
 
 ---
 
