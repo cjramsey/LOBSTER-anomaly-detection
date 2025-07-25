@@ -2,7 +2,7 @@
 
 This project focuses on detecting anomalies in high-frequency limit order book (LOB) data using an unsupervised deep learning approach. We use an **LSTM Autoencoder** trained to reconstruct normal LOB behavior and identify anomalies based on **reconstruction error**.
 
----
+
 
 ## Overview
 
@@ -13,7 +13,7 @@ This project focuses on detecting anomalies in high-frequency limit order book (
   - Compute reconstruction error for each sample.
   - Flag samples in the top 1% of reconstruction errors as anomalies.
 
----
+
 
 ## Model Details
 
@@ -23,7 +23,6 @@ This project focuses on detecting anomalies in high-frequency limit order book (
 - **Loss Function**: Mean Squared Error (MSE) between original and reconstructed sequences
 - **Thresholding**: Anomalies are defined as samples with reconstruction error in the 99th percentile.
 
----
 
 ## References
 
